@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@font-face {
+    font-family: 'optimanormal';
+    src: url('optima-webfont.woff2') format('woff2'),
+         url('optima-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+  font-family: 'optimanormal', sans-serif;
+}
+
+.announcement {
+  display: inline-block;
+  height: 8%;
+  text-align: center;
+  width: 100%;
+  background: #040a2b;
+  color: white;
+  font-size: 1em;
+}
+
+.announcement a { 
+  color: #9EAFFF; 
+}
+
+.bigbold{
+  font-size: 27px;
+  font-weight: 650;
+}
+
+.extrabold{
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.small{
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.logo{
+  padding-left: 1.5%;
+  width: 26%;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+}
+
+nav{
+  top: 0;
+  left: 0;
+  background: white;
+  position: fixed;
+  padding-bottom: 1%;
+  z-index: 1;
+}
+
+.video{
+  padding-top: 14%;
+  width: 100%;
+  text-align: center;
+}
+
+video{
+  width: 100%;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.serum{
+  width: 100%;
+  text-align: center;
+}
+
+.serum-img{
+  width: 30%;
+}
+
+.serum-text{
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  color: #040a2b;
+}
+
+.serum-info{
+  text-align: center;
+}
+
+.serum-info h4{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.overflow{
+  width: 34%;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+.button3{
+  font-family: 'optimanormal', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1% 1.5% 1% 1.5%;
+  margin-right: 0.7%;
+  margin-left: 0.7%;
+  background-color: white;
+  border: 1.5px solid #040a2b;
+  color: #040a2b;
+}
+
+.button3 a{
+  color: #040a2b;
+}
+
+.button4{
+  font-family: 'optimanormal', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1% 1.5% 1% 1.5%;
+  margin-right: 0.7%;
+  margin-left: 0.7%;
+  color: white;
+  background-color: #040a2b;
+  border: 1px solid #040a2b;
+}
+
+
+.bold{
+  font-weight: 600;
+}
+
+.cornflower-blue{
+  color: #5D8ADB;
+}
+
+.instagram-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  list-style: none;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.instagram-gallery > li {
+  height: 230px;
+  cursor: pointer;
+  position: relative;
+}
+
+.instagram-gallery li img {
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+  object-fit: cover;
+  width: 96%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.instagram-gallery > li {
+  flex: 1 1 auto;
+}
+
+.overlay {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 3px;
+  /* center overlay text */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+.instagram-gallery::after {
+  content: "";
+  flex-grow: 999;
+}
+
+
+.navbar-a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-weight: 900;
+  padding: 2% 0.8% 0.8% 1.5%;
+}
+
+nav .icon {
+  display: none;
+}
+
+
+/* text decor */
+.navbar-a:hover{
+  text-decoration: underline;
+}
+
+h1{
+  text-align: center;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 50;
+  font-size: 45px;
+}
+
+.containerh1{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 150;
+  font-size: 22px;
+}
+
+.container1 h2{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.container1 h3{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.container1 h4{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.container1 h5{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 750;
+  font-size: 15px;  
+}
+
+h2{
+  text-align: center;
+  font-family: 'optimanormal', sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+}
+/* end of text decor */
+
+
+
+.container1{
+  display: flex;
+  flex-direction: rows;
+  justify-content: center;
+  padding-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100%;
+  width: 99%;
+}
+
+.row1img1{
+  width: 18.5%;
+  height: 37%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 20px;
+}
+
+.row1img1 img{
+  width: 99%;
+  height: 100%;
+}
+
+.container2{
+  display: flex;
+  flex-direction: rows;
+  justify-content: center;
+  padding-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100%;
+  width: 99%;
+}
+
+.row2{
+  width: 32%;
+  height: 35%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.row2 img{
+  width: 99%;
+  height: 100%;
+}
+
+.conth2{
+  text-align: center;
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+/* text decor */
+.container2 h1{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 150;
+  font-size: 25px;
+}
+
+.container2 h3{
+  text-align: left;
+  font-family: 'optimanormal', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.container2 a{
+  color: black;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.container2 h4{
+  font-size: 14px;
+  font-weight: 900;
+  color: black;
+}
+
+/* end of text decor */
+
+
+
+.container3{
+  padding-top: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* text decor */
+.ad1text{
+  color: white;
+  width: 100%;
+}
+
+.ad1text button{
+  background: #040a2b;
+  color: white;
+  padding: 1% 2% 1% 2%;
+  font-weight: 800;
+  margin-bottom: 1%;
+}
+
+.ad1text a{
+  text-decoration: none;
+  color: white;
+}
+
+.ad1text a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.ad1text h3{
+  font-weight: 300;
+}
+
+.ad1text h4{
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ad1text h2{
+  font-size: 33px;
+  font-weight: 400;
+}
+
+.ad1text h1{
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.none{
+  color: #040a2b;
+}
+
+.none:hover{
+  color: #5D8ADB;
+}
+/* end of text decor */
+
+.ad1text{
+  background-image: url('https://www.esteelauder.com/media/export/cms_2.0/merch-windows/by-campaign/2022-promo-elements/excess-sale-sp22/SC_GLO187-Summer_Mega_Excess_Sale-pc-mpp_header-1366x500px.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #040a2b;
+  display: inline-block;
+}
+
+.rft{
+  padding: 1% 2% 1% 33%;
+  color: #9EAFFF;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.rft:hover{
+  color: white;
+}
+
+.footer-text{
+  color: #9EAFFF;
+  font-weight: 700;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+}
+
+.footer-text2{
+  color: #9EAFFF;
+  font-weight: 400;
+  padding: 1% 1% 1% 1%;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color: white;
+}
+
+.container-footer{
+  display: flex;
+}
+
+.row5{
+  width: 25%;
+  height: 25%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.row5 img{
+  width: 99%;
+  height: 100%;
+}
+
+.last{
+  padding-bottom: 4%;
+}
+
+.top{
+  padding-top: 3%;
+}
+
+
+
+
+/* START OF SLIDESHOW GALLERY */
+
+* {box-sizing:border-box}
+
+.serum {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: 0;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  user-select: none;
+  vertical-align: center;
+}
+
+.next {
+  right: 0;
+}
+
+.prev{
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  color: cornflowerblue;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* BIG TABLET */
+@media (max-width: 1200px){
+  .navbar-a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-weight: 900;
+  padding: 2% 0.2% 0.8% 1%;
+}
+  .footer-text, .rft, .footer-text2{
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    padding: 1% 1% 1% 1%;
+  }
+  .row1img1{
+  width: 18%;
+  height: 35%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 20px;
+}
+.instagram-gallery > li {
+  height: 220px;
+  width: 26%;
+  cursor: pointer;
+  position: relative;
+}
+
+}
+
+/* SMALL TABLET */
+@media (max-width: 900px){
+  .navbar-a{
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  font-weight: 900;
+  padding: 2% 0.1% 0.8% 0.35%;
+}
+  .containerh1{
+    font-size: 18px;
+  }
+  .row1img1{
+  width: 19%;
+  height: 38%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 20px;
+}
+  .row1img1 h2{
+    font-size: 15px;
+  }
+  .row1img1 h4{
+    font-size: 12px;
+  }
+
+  .overflow{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  }
+  .row2 h3{
+    font-size: 14px;
+  }
+  .row5 h3{
+    font-size: 14px;
+  }
+  .instagram-gallery > li {
+  height: 190px;
+  width: 25%;
+  cursor: pointer;
+  position: relative;
+}
+}
+
+
+
+/* PHONE */
+@media (max-width: 600px){
+  nav{
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 2%;
+  }
+  .navbar-a{
+    display: none;
+  }
+  .announcement{
+    display: none;
+  }
+  #br{
+    display: none;
+  }
+  .logo{
+    display: inline-block;
+    width: 200px;
+  }
+  .topnav a.icon {
+    color: black;
+    float: left;
+    font-size: 20px;
+    display: block;
+    padding: 4% 0% 3% 4%;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    float: left;
+    font-size: 20px;
+    padding: 4% 0% 3% 4%;
+    position: absolute;
+    top: 2%;
+    left: -1.6%;
+  }
+  .topnav.responsive .logo{
+    display: none;
+  }
+  .topnav.responsive a{
+    font-size: 14px;
+    padding: 6% 0% 1% 2.4%;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .bar1{
+    padding-top: 15%;
+  }
+  .video{
+    display: none;
+  }
+  .serum{
+    padding-top: 15%;
+  }
+  .serum-info h4{
+    display: none;
+  }
+  .serum-info button{
+    padding: 2% 3% 2% 3%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .container2{
+    padding-left: 0;
+    width: 200%;
+  }
+  .row1img1 h3{
+    display: none;
+  }
+  .row1img h2{
+    display: none;
+  }
+  .container1{
+    width: 200%;
+  }
+  row1img1 h1{
+    font-size: 15px;
+  }
+  .ad1text h1{
+    font-size: 30px;
+  }
+  .ad1text h2{
+    font-size: 20px;
+  }
+  .ad1text h3{
+    display: none;
+  }
+  .ad1text button{
+    padding: 2% 2% 2% 2%;
+    border: 0px solid black;
+    margin-bottom: 2%;
+  }
+  .conth2{
+    text-align: center;
+    font-family: 'optimanormal', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 2%;
+    
+  }
+  .footer-text2{
+    display: none;
+  }
+  .last{
+    padding-bottom: 10%;
+  }
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .instagram-gallery > li {
+    height: 200px;
+    width: auto;
+    cursor: pointer;
+    position: relative;
+}
+}
+
